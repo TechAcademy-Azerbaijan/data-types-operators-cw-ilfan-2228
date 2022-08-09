@@ -1,10 +1,17 @@
 const prompt = require('prompt');
 prompt.start();
+
+
 prompt.get('input', function (err, result) {
   
-let a = parseInt(result.input)  
-let s = 6*(a*2)
-let v = a**3
-console.log(s,v)
+var input = result.input;
+var numbers = input.split(',')  
+var firstNumber = parseInt(numbers[0]);
+var secondNumber = parseInt(numbers[1]);
+var resultNumber = firstNumber**secondNumber
+console.log(resultNumber);
+
+
+
 
 });
