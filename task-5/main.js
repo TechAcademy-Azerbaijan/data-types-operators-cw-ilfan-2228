@@ -4,6 +4,11 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    // Write code here
+  let a =parseInt(result.input)
+  let n = a%10;
   
+  console.log(n);
+
+
+
 });
